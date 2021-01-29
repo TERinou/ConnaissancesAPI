@@ -1,0 +1,15 @@
+{
+  "name": "@terinou/connaissancesapi",
+  "version": "1.0.0",
+  "description": "API de connaissance pour le projet TER 2021 du groupe TERinou.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charles DESGENETEZ",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.4.1"
+  }
+}
