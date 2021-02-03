@@ -4,12 +4,25 @@
   "description": "API de connaissance pour le projet TER 2021 du groupe TERinou.",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Charles DESGENETEZ",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "helmet": "^4.4.1"
-  }
+    "helmet": "^4.4.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TERinou/ConnaissancesAPI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TERinou/ConnaissancesAPI/issues"
+  },
+  "homepage": "https://github.com/TERinou/ConnaissancesAPI#readme"
 }
