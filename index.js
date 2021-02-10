@@ -14,7 +14,7 @@ mongoose.connect(`mongodb://localhost/${config.db}`, {
 	useFindAndModify: false,
 	useCreateIndex: true
 }, (err, database) => {
-	if (err) return console.log(err);
+	if (err) return console.error(err);
 	else console.log("[+]Connect to DB!");
 });
 mongoose.Promise = global.Promise;
