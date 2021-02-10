@@ -13,7 +13,7 @@ npm i --save express mongodb mongoose body-parser cors
 
 ## Variables d'environnement
 ```bash
-export TERINOU_PORT=<listening_port> # (default: 8080)
+export TERINOU_PORT=<listening_port> # (default: 8888)
 export TERINOU_DB=<url_database_connection> # (default: terinou)
 ```
 
