@@ -1,24 +1,14 @@
 // --- Express
-const express = require("express");
-const app = express();
-const routes = require('./routes');
+const app = require('./app');
 
-app.use(express.json());
-app.use(express.urlencoded({
-	extended: true
-}));
-app.use(function (req, res, next) {
-	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-	res.setHeader('Access-Control-Allow-Origin', '*');
-	res.setHeader('Access-Control-Allow-Headers', '*');
-	res.setHeader('Content-type', 'application/json');
-	next();
-});
-app.use(routes)
 
-// --- MongoDB
+// --- Config
+const config = require('./config');
+
+
+// --- Database connection
 const mongoose = require('mongoose');
-mongoose.connect(process.env.DB_URL, {
+mongoose.connect(`mongodb://localhost/${config.db}`, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 	useFindAndModify: false,
@@ -30,7 +20,7 @@ mongoose.connect(process.env.DB_URL, {
 mongoose.Promise = global.Promise;
 
 
-//--- Listening
-app.listen(process.env.DEV_PORT, () => {
-	console.log("[+]Server listening on: " + process.env.DEV_PORT);
+// --- Start listening
+app.listen(config.port, () => {
+	console.log("[+]Server listening on: " + config.port);
 });
