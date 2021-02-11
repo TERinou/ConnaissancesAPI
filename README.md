@@ -25,6 +25,3 @@ npm start dev
 # Serveur de production
 node index.js
 ```
-
-
-jest supertest
