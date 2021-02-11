@@ -13,7 +13,6 @@
     "@terinou/brain": "file:../brain",
     "express": "^4.17.1",
     "helmet": "^4.4.1",
-    "mongodb": "^3.6.4",
     "mongoose": "^5.11.14"
   },
   "repository": {
