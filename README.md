@@ -44,7 +44,7 @@ Return an answer to the user question give.
 
 :triangular_flag_on_post: **GET** `/questions/getAnswer?content=userQuestion`
 
-<details open>
+<details>
 <summary>More details</summary>
 <br/>
 
