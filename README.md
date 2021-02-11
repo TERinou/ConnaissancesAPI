@@ -8,7 +8,7 @@ Pour installer l'API, vous devez avoir installé Node.Js 12+ avec npm.
 ```bash
 git clone git@github.com:TERinou/ConnaissancesAPI.git
 cd ConnaissancesAPI
-npm i --save express mongodb mongoose body-parser cors
+npm i
 ```
 
 ## Variables d'environnement
