@@ -20,7 +20,7 @@ export TERINOU_DB=<url_database_connection> # (default: terinou)
 ## Lancer
 ```bash
 # Serveur de développement
-npm start dev
+npm run dev
 
 # Serveur de production
 node index.js
