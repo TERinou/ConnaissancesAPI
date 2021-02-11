@@ -17,7 +17,6 @@ mongoose.connect(`mongodb://localhost/${config.db}`, {
 	if (err) return console.error(err);
 	else console.log("[+]Connect to DB!");
 });
-mongoose.Promise = global.Promise;
 
 
 // --- Start listening
