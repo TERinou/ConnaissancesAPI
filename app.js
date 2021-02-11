@@ -12,7 +12,6 @@ app.use(function (req, res, next) {
 });
 
 app.use(helmet());
-app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.set('json spaces', 4);
 app.use('/v1', routes);
