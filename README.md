@@ -22,7 +22,7 @@ export TERINOU_DB=<url_database_connection> # (default: terinou)
 # Serveur de développement
 npm start dev
 
-# Serveur de release
+# Serveur de production
 node index.js
 ```
 
