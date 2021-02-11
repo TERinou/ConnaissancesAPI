@@ -1,6 +1,14 @@
 # ConnaissancesAPI
 API de connaissance pour le projet TER 2021 du groupe TERinou.
 
+* [Pré-requis](#pré-requis)
+* [Installation](#installation)
+* [Variables d'environnement](#variables-denvironnement)
+* [Lancer](#lancer)
+* [Documentation](#documentation)
+  * [Questions](#questions)
+
+
 ## Pré-requis
 Pour installer l'API, vous devez avoir installé Node.Js 12+ avec npm.
 
@@ -8,7 +16,7 @@ Pour installer l'API, vous devez avoir installé Node.Js 12+ avec npm.
 ```bash
 git clone git@github.com:TERinou/ConnaissancesAPI.git
 cd ConnaissancesAPI
-npm i --save express mongodb mongoose body-parser cors
+npm i --save express mongodb mongoose body-parser cors helmet
 ```
 
 ## Variables d'environnement
@@ -25,3 +33,47 @@ npm start dev
 # Serveur de production
 node index.js
 ```
+
+## Documentation
+
+### Questions
+
+#### :heavy_check_mark: getAnswer
+
+Return an answer to the user question give.
+
+:triangular_flag_on_post: **GET** `/questions/getAnswer?content=userQuestion`
+
+<details open>
+<summary>More details</summary>
+<br/>
+
+:bulb: **Query params**
+
+| Key     | Value        | Description                                  |
+| ------- | ------------ | -------------------------------------------- |
+| content | userQuestion | The user's question, if null return an error |
+
+<br/>
+
+:pencil2: **Samples**:
+
+**GET** `/questions/getAnswer?content=What do you know about chairs?`
+
+```json
+{
+  "ok": true,
+  "answer": "BOT_ANSWER"
+}
+```
+
+**GET** `/questions/getAnswer`
+
+```json
+{
+  "ok": false,
+  "code": "ME40001",
+  "message": "No question were asked"
+}
+```
+</details>
