@@ -49,7 +49,7 @@ Handle conversation between user's and the bot.
 
 :triangular_flag_on_post: **POST** `/conversations/replies`
 
-<details open>
+<details>
 <summary>More details</summary>
 <br/>
 
@@ -65,7 +65,7 @@ body:
 }
 ```
 
-<details open>
+<details>
 <summary>Samples</summary>
 <br/>
 
