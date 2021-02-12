@@ -6,7 +6,7 @@ API de connaissance pour le projet TER 2021 du groupe TERinou.
 * [Variables d'environnement](#variables-denvironnement)
 * [Lancer](#lancer)
 * [Documentation](#documentation)
-  * [Conversations](#conversations)
+  * [Conversations `/conversation`](#conversations-conversation)
 
 
 ## Pré-requis
@@ -36,20 +36,38 @@ node index.js
 
 ## Documentation
 
-### Conversations
+### Conversations `/conversation`
 
-#### :heavy_check_mark: replies
+Handle conversation between user's and the bot.
 
-Return an answer to user's replies.
+#### :label: replies
+
+**Description:** Return answer to user's replies.
+
+**Usage:**
+
 
 :triangular_flag_on_post: **POST** `/conversations/replies`
 
 <details open>
 <summary>More details</summary>
-
 <br/>
 
-:pencil2: **Samples**:
+Handle POST replies. The `content` is a required key refereeing to user's reply, if null return an error. If an `id` is provided, then the user answers a question asked by the bot. In this case we send him back a message. Otherwise it is that he asks us a question.
+<br/>
+
+
+```json
+body:
+{
+  "content": "USER_REPLY",
+  "id": "ANSWER_TO"
+}
+```
+
+<details open>
+<summary>Samples</summary>
+<br/>
 
 ```json
 Body:
@@ -63,7 +81,7 @@ response:
   "answer": "BOT_REPLY"
 }
 ```
-`Status` **200 OK**
+:heavy_check_mark: `Status` **200 OK**
 
 ---
 
@@ -80,7 +98,7 @@ Response:
   "message": "BOT_REPLY"
 }
 ```
-`Status` **200 OK**
+:heavy_check_mark: `Status` **200 OK**
 
 ---
 
@@ -94,5 +112,6 @@ Response:
   "message": "No reply found"
 }
 ```
-`Status` **400 Bad Request**
+:x: `Status` **400 Bad Request**
+</details>
 </details>
