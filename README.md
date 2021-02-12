@@ -6,7 +6,7 @@ API de connaissance pour le projet TER 2021 du groupe TERinou.
 * [Variables d'environnement](#variables-denvironnement)
 * [Lancer](#lancer)
 * [Documentation](#documentation)
-	* [Questions](#questions)
+  * [Conversations](#conversations)
 
 
 ## Pré-requis
@@ -36,44 +36,63 @@ node index.js
 
 ## Documentation
 
-### Questions
+### Conversations
 
-#### :heavy_check_mark: getAnswer
+#### :heavy_check_mark: replies
 
-Return an answer to the user question give.
+Return an answer to user's replies.
 
-:triangular_flag_on_post: **GET** `/questions/getAnswer?content=userQuestion`
+:triangular_flag_on_post: **POST** `/conversations/replies`
 
-<details>
+<details open>
 <summary>More details</summary>
-<br/>
-
-:bulb: **Query params**
-
-| Key     | Value        | Description                                  |
-| ------- | ------------ | -------------------------------------------- |
-| content | userQuestion | The user's question, if null return an error |
 
 <br/>
 
 :pencil2: **Samples**:
 
-**GET** `/questions/getAnswer?content=What do you know about chairs?`
-
 ```json
+Body:
+{
+  "content": "What do you know about chairs ?"
+}
+
+response: 
 {
   "ok": true,
-  "answer": "BOT_ANSWER"
+  "answer": "BOT_REPLY"
 }
 ```
+`Status` **200 OK**
 
-**GET** `/questions/getAnswer`
+---
 
 ```json
+Body: 
 {
-  "ok": false,
-  "code": "ME40001",
-  "message": "No question were asked"
+  "content": "I love dogs and cats",
+  "id": 69420
+}
+
+Response: 
+{
+  "ok": true,
+  "message": "BOT_REPLY"
 }
 ```
+`Status` **200 OK**
+
+---
+
+```json
+Body: {}
+
+Response: 
+{
+  "ok": false,
+  "code": "CO40001",
+  "message": "No reply found"
+}
+```
+`Status` **400 Bad Request**
 </details>
