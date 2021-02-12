@@ -1,5 +1,5 @@
 const router = require('express').Router();
 
-router.use('/questions', require('./questions'));
+router.use('/conversations', require('./conversations'));
 
 module.exports = router;
