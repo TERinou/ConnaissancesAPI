@@ -11,13 +11,19 @@ const mongoose = require('mongoose');
 mongoose.connect(`mongodb://localhost/${config.db}`, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
-	useFindAndModify: false,
 	useCreateIndex: true
-}, (err, database) => {
+}, (err) => {
 	if (err) return console.error(err);
-	else console.log("[+]Connect to DB!");
+
+	console.log("[+]Connect to DB!");
+
+	// const db = mongoose.connection;
+	//
+	// const questions = db.collection('Questions');
+	// questions.find().toArray((err, results) => {
+	// 	console.log(results);
+	// });
 });
-mongoose.Promise = global.Promise;
 
 
 // --- Start listening
