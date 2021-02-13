@@ -8,7 +8,6 @@ const Questions = require('../models/Questions');
  * @param res
  */
 exports.onPostReplies = function (req, res) {
-
 	let content = req.body.content;
 	let id = req.body.id;
 
@@ -46,12 +45,17 @@ exports.onPostReplies = function (req, res) {
  */
 exports.onGetQuestion = function (req, res) {
 	Questions.find({}, function (err, questions) {
-		if (err) return res.status(500).send(err);
-		if (!questions) return res.status(404).json({
-			ok: false,
-			code: 'CO40401',
-			message: 'No question found'
-		});
+		if (err) {
+			console.error(err);
+			return res.status(500).send(err);
+		}
+		if (!questions || questions.length === 0) {
+			return res.status(404).json({
+				ok: false,
+				code: 'CO40401',
+				message: 'No question found'
+			});
+		}
 
 		let randomQuestion = questions[Object.keys(questions)[Math.floor(Math.random() * Object.keys(questions).length)]];
 
@@ -61,4 +65,3 @@ exports.onGetQuestion = function (req, res) {
 		});
 	});
 }
-

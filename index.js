@@ -16,13 +16,6 @@ mongoose.connect(`mongodb://localhost/${config.db}`, {
 	if (err) return console.error(err);
 
 	console.log("[+]Connect to DB!");
-
-	// const db = mongoose.connection;
-	//
-	// const questions = db.collection('Questions');
-	// questions.find().toArray((err, results) => {
-	// 	console.log(results);
-	// });
 });
 
 
