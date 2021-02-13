@@ -15,9 +15,9 @@ mongoose.connect(`mongodb://localhost/${config.db}`, {
 	useCreateIndex: true
 }, (err, database) => {
 	if (err) return console.error(err);
-	else console.log("[+]Connect to DB!");
+
+	console.log("[+]Connect to DB!");
 });
-mongoose.Promise = global.Promise;
 
 
 // --- Start listening
