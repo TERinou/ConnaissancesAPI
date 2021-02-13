@@ -40,9 +40,10 @@ node index.js
 
 Handle conversation between user's and the bot.
 
-#### :label: replies `/conversations/replies`
+#### :label: **replies** `/conversations/replies`
+<br/>
 
-:triangular_flag_on_post: **Method POST**
+> Method POST
 
 <details>
 <summary>More details</summary>
@@ -50,7 +51,6 @@ Handle conversation between user's and the bot.
 
 Handle POST replies. The `content` is a required key refereeing to user's reply, if null return an error. If an `id` is provided, then the user answers a question asked by the bot. In this case we send him back a message. Otherwise it is that he asks us a question.
 <br/>
-
 
 ```json
 Body:
@@ -70,7 +70,7 @@ Body:
   "content": "What do you know about chairs ?"
 }
 
-response: 
+Response: 
 {
   "ok": true,
   "answer": "BOT_REPLY"
