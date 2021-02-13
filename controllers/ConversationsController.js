@@ -8,11 +8,11 @@ const Questions = require('../models/Questions');
  * @param res
  */
 exports.onPostReplies = function (req, res) {
-	let content = req.body.content;
-	let id = req.body.id;
+
+	const { id, content } = req.body;
 
 	// --- If content is null || undefined, return Bad Request
-	if (content === null || content === undefined) {
+	if (!content) {
 		return res.status(400).json({
 			ok: false,
 			code: 'CO40001',
@@ -21,7 +21,7 @@ exports.onPostReplies = function (req, res) {
 	}
 
 	// --- If id is null || undefined, reply user's question
-	if (id === null || id === undefined) {
+	if (!id) {
 		return res.status(200).json({
 			ok: true,
 			reply: "BOT_REPLY"
