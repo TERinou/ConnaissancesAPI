@@ -1,3 +1,5 @@
+const Questions = require('../models/Questions');
+
 /**
  * Handle POST replies.
  * If the content is queried with an id it means user reply a previous question.
@@ -32,4 +34,34 @@ exports.onPostReplies = function (req, res) {
 		ok: true,
 		reply: "BOT_REPLY"
 	})
+}
+
+
+/**
+ * Handle GET question.
+ * Search a question to ask the user, and send it to him.
+ * @param req
+ * @param res
+ */
+exports.onGetQuestion = function (req, res) {
+	Questions.find({}, function (err, questions) {
+		if (err) {
+			console.error(err);
+			return res.status(500).send(err);
+		}
+		if (!questions || questions.length === 0) {
+			return res.status(404).json({
+				ok: false,
+				code: 'CO40401',
+				message: 'No question found'
+			});
+		}
+
+		const randomQuestion = questions[Object.keys(questions)[Math.floor(Math.random() * Object.keys(questions).length)]];
+
+		return res.status(200).json({
+			ok: true,
+			question: randomQuestion
+		});
+	});
 }

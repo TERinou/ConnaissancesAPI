@@ -6,7 +6,7 @@ API de connaissance pour le projet TER 2021 du groupe TERinou.
 * [Variables d'environnement](#variables-denvironnement)
 * [Lancer](#lancer)
 * [Documentation](#documentation)
-  * [Conversations `/conversation`](#conversations-conversation)
+  * [Conversations `/conversations`](#conversations-conversations)
 
 
 ## Pré-requis
@@ -22,7 +22,7 @@ npm i
 ## Variables d'environnement
 ```bash
 export TERINOU_PORT=<listening_port> # (default: 8888)
-export TERINOU_DB=<url_database_connection> # (default: terinou)
+export TERINOU_DB=<url_database_connection> # (default: TERinou)
 ```
 
 ## Lancer
@@ -36,7 +36,7 @@ node index.js
 
 ## Documentation
 
-### Conversations `/conversation`
+### Conversations `/conversations`
 
 Handle conversation between user's and the bot.
 
@@ -109,4 +109,43 @@ Response:
 ```
 :x: `Status` **400 Bad Request**
 </details>
+</details>
+
+---
+
+#### :label: **question** `/conversations/question`
+<br/>
+
+> Method GET
+
+<details>
+<summary>More details</summary>
+<br/>
+
+Handle GET question. Return a random question.
+
+<details>
+<summary>Samples</summary>
+<br/>
+
+```json
+Response: 
+{
+  "ok": true,
+  "question": "What do you think about tomatoes?"
+}
+```
+:heavy_check_mark: `Status` **200 OK**
+
+---
+
+```json
+Response: 
+{
+  "ok": false,
+  "code": "CO40401",
+  "message": "No question found"
+}
+```
+:x: `Status` **404 Bad Request**
 </details>
