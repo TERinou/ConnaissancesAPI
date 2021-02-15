@@ -57,7 +57,7 @@ exports.onGetQuestion = function (req, res) {
 			});
 		}
 
-		let randomQuestion = questions[Object.keys(questions)[Math.floor(Math.random() * Object.keys(questions).length)]];
+		const randomQuestion = questions[Object.keys(questions)[Math.floor(Math.random() * Object.keys(questions).length)]];
 
 		return res.status(200).json({
 			ok: true,
