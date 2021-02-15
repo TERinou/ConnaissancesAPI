@@ -40,8 +40,6 @@ node index.js
 
 Handle conversation between user's and the bot.
 
----
-
 #### :label: **replies** `/conversations/replies`
 <br/>
 
