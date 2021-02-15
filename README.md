@@ -134,7 +134,7 @@ Handle GET question. Return a random question.
 Response: 
 {
   "ok": true,
-  "question": "What do you think of tomatoes?"
+  "question": "What do you think about tomatoes?"
 }
 ```
 :heavy_check_mark: `Status` **200 OK**
