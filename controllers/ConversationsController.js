@@ -1,4 +1,6 @@
+const brain = require('@terinou/brain');
 const Questions = require('../models/Questions');
+const Words = require('../models/Words');
 
 /**
  * Handle POST replies.
@@ -11,29 +13,49 @@ exports.onPostReplies = function (req, res) {
 
 	const { id, content } = req.body;
 
-	// --- If content is null || undefined, return Bad Request
+	// content is null || undefined, return Bad Request.
 	if (!content) {
 		return res.status(400).json({
 			ok: false,
 			code: 'CO40001',
-			message: 'No reply found'
+			message: 'User reply undefined'
 		});
 	}
 
-	// --- If id is null || undefined, reply user's question
+	// get the main keyword of the phrase
+	const keyword = brain.getKeyWord(content);
+	if (!keyword) {
+		return res.status(404).json({
+			ok: false,
+			code: 'CO40403',
+			message: 'No keyword found'
+		});
+	}
+
+	// id is null || undefined, reply user's question.
 	if (!id) {
-		return res.status(200).json({
-			ok: true,
-			reply: "BOT_REPLY"
+		Words.findOne({ word: keyword }, function (err, word) {
+			if (err) { console.error(err); return res.status(500).send(err) }
+			if (!word) {
+				return res.status(404).json({
+					ok: false,
+					code: 'CO40402',
+					message: 'No word found'
+				});
+			}
+			return res.status(200).json({
+				ok: true,
+				word
+			})
 		})
 	}
 
-	// --- Else
-	// TODO Process the user response linked to the question this id
-	return res.status(200).json({
-		ok: true,
-		reply: "BOT_REPLY"
-	})
+	// otherwise confirm we get his response. 
+	else {
+		return res.status(200).json({
+			ok: true
+		})
+	}
 }
 
 
