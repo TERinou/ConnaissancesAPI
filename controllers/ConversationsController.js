@@ -1,3 +1,4 @@
+const brain = require('@terinou/brain');
 const Questions = require('../models/Questions');
 
 /**
@@ -16,7 +17,7 @@ exports.onPostReplies = function (req, res) {
 		return res.status(400).json({
 			ok: false,
 			code: 'CO40001',
-			message: 'No reply found'
+			message: 'User reply undefined'
 		});
 	}
 
@@ -29,10 +30,19 @@ exports.onPostReplies = function (req, res) {
 	}
 
 	// --- Else
-	// TODO Process the user response linked to the question this id
+	// TODO Process the user response linked to the question id
+	// like: (brain.treatReply())
+
+
+	// TODO Get a new reply to send
+	// like: (brain.getReply())
+	const keywords = brain.getKeyWork(content);
+	console.log(keywords);
+	const reply = `Tu as raison c'est délicieux en ${keywords} ! Mais je préfère la brandade de morue :wink:`
+
 	return res.status(200).json({
 		ok: true,
-		reply: "BOT_REPLY"
+		reply: reply,
 	})
 }
 

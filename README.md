@@ -6,7 +6,9 @@ API de connaissance pour le projet TER 2021 du groupe TERinou.
 * [Variables d'environnement](#variables-denvironnement)
 * [Lancer](#lancer)
 * [Documentation](#documentation)
-  * [Conversations `/conversations`](#conversations-conversations)
+  * [**Conversations**](#conversations)
+  * [**/replies**](#replies)
+  * [**/question**](#question)
 
 
 ## Pré-requis
@@ -36,21 +38,23 @@ node index.js
 
 ## Documentation
 
-### Conversations `/conversations`
+### **Conversations**
 
 Handle conversation between user's and the bot.
 
-#### :label: **replies** `/conversations/replies`
 <br/>
 
-> Method POST
+### **/replies**
 
-<details>
-<summary>More details</summary>
+Manages responses (received and to be sent) from a user.
+
 <br/>
 
-Handle POST replies. The `content` is a required key refereeing to user's reply, if null return an error. If an `id` is provided, then the user answers a question asked by the bot. In this case we send him back a message. Otherwise it is that he asks us a question.
-<br/>
+🟡 **POST | Respond user's reply**
+
+    http://localhost:8888/v1/conversations/replies
+
+The `content` is a required key refereeing to user's reply, if null return an error. If an `id` is provided, then the user answers a question asked by the bot. In this case we send him back a message. Otherwise it is that he asks us a question.
 
 ```json
 Body:
@@ -59,6 +63,8 @@ Body:
   "id": "ANSWER_TO"
 }
 ```
+
+<br/>
 
 <details>
 <summary>Samples</summary>
@@ -104,25 +110,23 @@ Response:
 {
   "ok": false,
   "code": "CO40001",
-  "message": "No reply found"
+  "message": "User reply undefined"
 }
 ```
 :x: `Status` **400 Bad Request**
 </details>
-</details>
 
 ---
 
-#### :label: **question** `/conversations/question`
+### **/question**
+
+Return a random question from the database.
+
 <br/>
 
-> Method GET
+🟢 **GET | Generate a question**
 
-<details>
-<summary>More details</summary>
-<br/>
-
-Handle GET question. Return a random question.
+    http://localhost:8888/v1/conversations/question
 
 <details>
 <summary>Samples</summary>
@@ -149,3 +153,5 @@ Response:
 ```
 :x: `Status` **404 Bad Request**
 </details>
+
+---

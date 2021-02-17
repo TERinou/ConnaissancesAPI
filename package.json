@@ -7,10 +7,15 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Charles DESGENETEZ",
+  "author": "Thomas CANTA",
+  "contributors": [
+    "Charles DESGENETEZ",
+    "Maxime REITER",
+    "Kevin GRACIA-MOULIS"
+  ],
   "license": "ISC",
   "dependencies": {
-    "@terinou/brain": "file:../brain",
+    "@terinou/brain": "file:../Brain",
     "express": "^4.17.1",
     "helmet": "^4.4.1",
     "mongoose": "^5.11.14"
