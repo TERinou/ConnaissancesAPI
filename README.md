@@ -7,8 +7,6 @@ API de connaissance pour le projet TER 2021 du groupe TERinou.
 * [Lancer](#lancer)
 * [Documentation](#documentation)
   * [**Conversations**](#conversations)
-  * [**/replies**](#replies)
-  * [**/question**](#question)
 
 
 ## Pré-requis
@@ -44,7 +42,7 @@ Handle conversation between user's and the bot.
 
 <br/>
 
-### **/replies**
+#### **/replies**
 
 Manages responses (received and to be sent) from a user.
 
@@ -118,7 +116,7 @@ Response:
 
 ---
 
-### **/question**
+#### **/question**
 
 Return a random question from the database.
 
