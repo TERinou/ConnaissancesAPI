@@ -1,8 +1,8 @@
 # ConnaissanceAPI - Routes documentation
 
 * [**Conversations**](#conversations)
-	* [**/replies**](#replies)
-	* [**/question**](#question)
+  * [**/replies**](#replies)
+  * [**/question**](#question)
 
 ## **Conversations**
 
@@ -22,67 +22,70 @@ Manages responses (received and to be sent) from a user.
 
 The `content` is a required key refereeing to user's reply, if null return an error. If an `id` is provided, then the user answers a question asked by the bot. In this case we send him back a message. Otherwise it is that he asks us a question.
 
+**Body**
 ```json
-Body:
 {
   "content": "USER_REPLY",
   "id": "ANSWER_TO"
 }
 ```
-
 <br/>
 
 <details>
 <summary>Samples</summary>
 <br/>
 
-```json
-Body:
-{
-  "content": "What do you know about chairs ?"
-}
+**:triangular_flag_on_post: User ask me a question**
 
-Response: 
+**Body**
+```json
+{
+  "content": "Que sais-tu sur les chaises ?"
+}
+```
+
+**Response**
+```json
 {
   "ok": true,
-  "answer": "BOT_REPLY"
+  "word": {
+    "relations": [
+      "table",
+      "tabouret"
+    ],
+    "_id": "602d28c829306fc1783b5084",
+    "word": "chaise"
+  }
 }
 ```
 :heavy_check_mark: `Status` **200 OK**
 
 ---
 
-```json
-Body: 
-{
-  "content": "I love dogs and cats",
-  "id": 69420
-}
+<br/>
 
-Response: 
+**:triangular_flag_on_post: User answered my question**
+
+**Body**
+```json
 {
-  "ok": true,
-  "message": "BOT_REPLY"
+    "content": "Avec des oeufs pour faire une omelette",
+    "id": 123456
+}
+```
+
+**Response**
+```json
+{
+  "ok": true
 }
 ```
 :heavy_check_mark: `Status` **200 OK**
-
----
-
-```json
-Body: {}
-
-Response: 
-{
-  "ok": false,
-  "code": "CO40001",
-  "message": "User reply undefined"
-}
-```
-:x: `Status` **400 Bad Request**
 </details>
 
 ---
+
+<br/>
 
 ### **/question**
 
@@ -94,30 +97,22 @@ Return a random question from the database.
 
     http://localhost:8888/v1/conversations/question
 
+<br/>
+
 <details>
 <summary>Samples</summary>
 <br/>
 
-```json
-Response: 
+**:triangular_flag_on_post: Random example**
+
+```json 
 {
   "ok": true,
-  "question": "What do you think about tomatoes?"
+  "question": {
+    "_id": "6027c3411a0cf4f5a1749c63",
+    "content": "Que cuisine tu avec des champignons ?"
+  }
 }
 ```
 :heavy_check_mark: `Status` **200 OK**
-
----
-
-```json
-Response: 
-{
-  "ok": false,
-  "code": "CO40401",
-  "message": "No question found"
-}
-```
-:x: `Status` **404 Bad Request**
 </details>
-
----
