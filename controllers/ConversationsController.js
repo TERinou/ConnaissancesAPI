@@ -36,8 +36,7 @@ exports.onPostReplies = function (req, res) {
 
 	// TODO Get a new reply to send
 	// like: (brain.getReply())
-	const keywords = brain.getKeyWork(content);
-	console.log(keywords);
+	const keywords = brain.getKeyWord(content);
 	const reply = `Tu as raison c'est délicieux en ${keywords} ! Mais je préfère la brandade de morue :wink:`
 
 	return res.status(200).json({
