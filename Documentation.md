@@ -49,12 +49,22 @@ The `content` is a required key refereeing to user's reply, if null return an er
 {
   "ok": true,
   "word": {
+    "_id": "603bf4668fdcc497557c29b6",
+    "word": "chaise",
     "relations": [
-      "table",
-      "tabouret"
-    ],
-    "_id": "602d28c829306fc1783b5084",
-    "word": "chaise"
+      {
+        "word": "cuisine",
+        "relation": "r_lieu"
+      },
+      {
+        "word": "pliante",
+        "relation": "r_carac"
+      },
+      {
+        "word": "en bois",
+        "relation": "r_carac"
+      }
+    ]
   }
 }
 ```
