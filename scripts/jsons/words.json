@@ -1,3 +1,20 @@
 [
-	{ "word": "chaise", "relations": ["table","tabouret"] }
+	{ 
+		"word": "chaise", 
+		"relations": 
+		[
+			{
+				"word": "cuisine",
+				"relation": "r_lieu"
+			},
+			{
+				"word": "pliante",
+				"relation": "r_carac"
+			},
+			{
+				"word": "en bois",
+				"relation": "r_carac"
+			}
+		]
+	}
 ]
