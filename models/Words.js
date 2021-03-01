@@ -1,6 +1,7 @@
+const DumpRelations = require('./DumpRelations');
 const mongoose = require('mongoose');
 
-const QuestionsSchema = new mongoose.Schema({
+const WordSchema = new mongoose.Schema({
 	word: {
 		type: String,
 		unique: true,
@@ -8,9 +9,17 @@ const QuestionsSchema = new mongoose.Schema({
 	},
 	relations: [
 		{
-			type: String
+			"word": {
+				type: String,
+				required: [true, "A word is required"]
+			},
+			"relation": {
+				type: String,
+				enum: DumpRelations,
+				required: [true, "A relation is required"]
+			}
 		}
 	]
 });
 
-module.exports = mongoose.model('Words', QuestionsSchema);
+module.exports = mongoose.model('Words', WordSchema);
