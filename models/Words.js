@@ -9,14 +9,14 @@ const WordSchema = new mongoose.Schema({
 	},
 	relations: [
 		{
-			"word": {
+			word: {
 				type: String,
 				required: [true, "A word is required"]
 			},
-			"relation": {
+			type: {
 				type: String,
 				enum: DumpRelations,
-				required: [true, "A relation is required"]
+				required: [true, "A relation type is required"]
 			}
 		}
 	]

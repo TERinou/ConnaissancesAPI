@@ -1,6 +1,8 @@
-const brain = require('@terinou/brain');
+const Brain = require('@terinou/brain');
 const Questions = require('../models/Questions');
 const Words = require('../models/Words');
+
+const INFERENCES_MAX_DEPTH = 5;
 
 /**
  * Handle POST replies.
@@ -9,9 +11,9 @@ const Words = require('../models/Words');
  * @param req
  * @param res
  */
-exports.onPostReplies = function (req, res) {
+exports.onPostReplies = async function (req, res) {
 
-	const { id, content } = req.body;
+	const {id, content} = req.body;
 
 	// content is null || undefined, return Bad Request.
 	if (!content) {
@@ -22,39 +24,75 @@ exports.onPostReplies = function (req, res) {
 		});
 	}
 
+	// TODO Stop using getKeyWord and get all information needed
 	// get the main keyword of the phrase
-	const keyword = brain.getKeyWord(content);
-	if (!keyword) {
-		return res.status(404).json({
-			ok: false,
-			code: 'CO40403',
-			message: 'No keyword found'
-		});
+	// const keyword = brain.getKeyWord(content);
+	// if (!keyword) {
+	// 	return res.status(404).json({
+	// 		ok: false,
+	// 		code: 'CO40403',
+	// 		message: 'No keyword found'
+	// 	});
+	// }
+
+	// Mocking example
+	const information = {
+		object: "carotte",
+		relationType: "r_isa",
+		relation: "aliment"
 	}
 
 	// id is null || undefined, reply user's question.
 	if (!id) {
-		Words.findOne({ word: keyword }, function (err, word) {
-			if (err) { console.error(err); return res.status(500).send(err) }
-			if (!word) {
-				return res.status(404).json({
-					ok: false,
-					code: 'CO40402',
-					message: 'No word found'
-				});
+		let word = information.object;	// object copy for manipulation
+		let inferences = []; 				// store each inference we found
+		let depth = 0;		 				// actual depth
+
+		while (depth < INFERENCES_MAX_DEPTH) {
+			try {
+				// Retrieve word data
+				const wordData = await Words.findOne({word: word}).exec();
+
+				// No word found
+				if (!wordData) {
+					return res.status(404).json({
+						ok: false,
+						code: 'CO40402',
+						message: `No word found for ${word}`
+					});
+				}
+
+				// Go through each relation
+				for (let relation of wordData.relations) {
+					if (relation.type === information.relationType) {
+						if (relation.word === information.relation) {
+							return res.status(200).json({ok: true, information, inferences});
+						}
+						word = relation.word;
+						inferences.push(word);
+						break;
+					}
+				}
+
+				depth++;
+			} catch (err) {
+				console.error(err);
+				return res.status(500).send(err.message);
 			}
-			return res.status(200).json({
-				ok: true,
-				word
-			})
+		}
+
+		return res.status(404).json({
+			ok: false,
+			code: 'CO40404',
+			message: 'Cannot find the relation',
+			information,
+			inferences
 		})
 	}
 
-	// otherwise confirm we get his response. 
+	// otherwise confirm we get his response.
 	else {
-		return res.status(200).json({
-			ok: true
-		})
+		return res.status(200).json({ok: true});
 	}
 }
 
