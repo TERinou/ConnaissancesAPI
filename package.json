@@ -18,6 +18,7 @@
     "@terinou/brain": "file:../Brain",
     "express": "^4.17.1",
     "helmet": "^4.4.1",
+    "jeuxdemots": "^1.0.5",
     "mongoose": "^5.11.14"
   },
   "repository": {
