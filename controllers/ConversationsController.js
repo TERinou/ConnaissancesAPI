@@ -125,7 +125,6 @@ async function checkInferences(relation) {
 
 	// --- No word found.
 	if (!word) {
-		console.error(`[-]No word found for ${relation.word}`);
 		return {ok: false};
 	}
 
