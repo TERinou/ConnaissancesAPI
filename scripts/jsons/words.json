@@ -1,24 +1,6 @@
 [
 	{ 
-		"word": "chaise", 
-		"relations": 
-		[
-			{
-				"word": "cuisine",
-				"type": "r_lieu"
-			},
-			{
-				"word": "pliante",
-				"type": "r_carac"
-			},
-			{
-				"word": "en bois",
-				"type": "r_carac"
-			}
-		]
-	},
-	{ 
-		"word": "carotte", 
+		"word": "tomate",
 		"relations": 
 		[
 			{
@@ -34,15 +16,11 @@
 				"type": "r_lieu"
 			},
 			{
-				"word": "jardin",
-				"type": "r_lieu"
-			},
-			{
 				"word": "croquante",
 				"type": "r_carac"
 			},
 			{
-				"word": "orangée",
+				"word": "rouge",
 				"type": "r_carac"
 			}
 		]
@@ -56,14 +34,6 @@
 				"type": "r_isa"
 			},
 			{
-				"word": "fleur",
-				"type": "r_isa"
-			},
-			{
-				"word": "assiette",
-				"type": "r_lieu"
-			},
-			{
 				"word": "cuisine",
 				"type": "r_lieu"
 			},
@@ -73,6 +43,10 @@
 			},
 			{
 				"word": "comestible",
+				"type": "r_carac"
+			},
+			{
+				"word": "médicinale",
 				"type": "r_carac"
 			}
 		]
@@ -137,12 +111,26 @@
 			}
 		]
 	},
+	{
+		"word": "assiette",
+		"relations":
+		[
+			{
+				"word": "ustensile",
+				"type": "r_isa"
+			}
+		]
+	},
 	{ 
 		"word": "ustensile", 
 		"relations": 
 		[
 			{
 				"word": "cuisine",
+				"type": "r_lieu"
+			},
+			{
+				"word": "maison",
 				"type": "r_lieu"
 			},
 			{
