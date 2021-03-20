@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === "production") {
         console.log(`Serveur ouvert en mode production sur le port ${config.port}.`);
     });
 } else {
-    app.listen(config.port, () => {
+    app.listen(config.port, async () => {
         console.log("[+]Server listening on: " + config.port);
     });
 }
