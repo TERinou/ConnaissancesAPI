@@ -1,19 +1,157 @@
 [
 	{ 
-		"word": "chaise", 
+		"word": "tomate",
+		"relations": 
+		[
+			{
+				"word": "plante",
+				"type": "r_isa"
+			},
+			{
+				"word": "assiette",
+				"type": "r_lieu"
+			},
+			{
+				"word": "cuisine",
+				"type": "r_lieu"
+			},
+			{
+				"word": "croquante",
+				"type": "r_carac"
+			},
+			{
+				"word": "rouge",
+				"type": "r_carac"
+			}
+		]
+	},
+	{ 
+		"word": "plante", 
+		"relations": 
+		[
+			{
+				"word": "légume",
+				"type": "r_isa"
+			},
+			{
+				"word": "cuisine",
+				"type": "r_lieu"
+			},
+			{
+				"word": "jardin",
+				"type": "r_lieu"
+			},
+			{
+				"word": "comestible",
+				"type": "r_carac"
+			},
+			{
+				"word": "médicinale",
+				"type": "r_carac"
+			}
+		]
+	},
+	{ 
+		"word": "légume", 
+		"relations": 
+		[
+			{
+				"word": "aliment",
+				"type": "r_isa"
+			},
+			{
+				"word": "racine",
+				"type": "r_isa"
+			},
+			{
+				"word": "tubercule",
+				"type": "r_isa"
+			},
+			{
+				"word": "assiette",
+				"type": "r_lieu"
+			},
+			{
+				"word": "jardin",
+				"type": "r_lieu"
+			},
+			{
+				"word": "d'origine végétal",
+				"type": "r_carac"
+			}
+		]
+	},
+	{ 
+		"word": "fourchette", 
+		"relations": 
+		[
+			{
+				"word": "couvert",
+				"type": "r_isa"
+			},
+			{
+				"word": "ustensile",
+				"type": "r_isa"
+			},
+			{
+				"word": "tiroir",
+				"type": "r_lieu"
+			},
+			{
+				"word": "table",
+				"type": "r_lieu"
+			},
+			{
+				"word": "cuisine",
+				"type": "r_lieu"
+			},
+			{
+				"word": "en argent",
+				"type": "r_carac"
+			}
+		]
+	},
+	{
+		"word": "assiette",
+		"relations":
+		[
+			{
+				"word": "ustensile",
+				"type": "r_isa"
+			}
+		]
+	},
+	{ 
+		"word": "ustensile", 
 		"relations": 
 		[
 			{
 				"word": "cuisine",
-				"relation": "r_lieu"
+				"type": "r_lieu"
 			},
 			{
-				"word": "pliante",
-				"relation": "r_carac"
+				"word": "maison",
+				"type": "r_lieu"
 			},
 			{
-				"word": "en bois",
-				"relation": "r_carac"
+				"word": "table",
+				"type": "r_lieu"
+			},
+			{
+				"word": "tiroir",
+				"type": "r_lieu"
+			},
+			{
+				"word": "garage",
+				"type": "r_lieu"
+			},
+			{
+				"word": "de jardin",
+				"type": "r_carac"
+			},
+			{
+				"word": "de cuisine",
+				"type": "r_carac"
 			}
 		]
 	}

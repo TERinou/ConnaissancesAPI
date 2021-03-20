@@ -3,24 +3,24 @@ const mongoose = require('mongoose');
 const jeuxdemots = require('jeuxdemots');
 
 const WordSchema = new mongoose.Schema({
-    word: {
-        type: String,
-        unique: true,
-        required: [true, "A word is required"]
-    },
-    relations: [
-        {
-            word: {
-                type: String,
-                required: [true, "A word is required"]
-            },
-            relation: {
-                type: String,
-                enum: DumpRelations,
-                required: [true, "A relation is required"]
-            }
-        }
-    ]
+	word: {
+		type: String,
+		unique: true,
+		required: [true, "A word is required"]
+	},
+	relations: [
+		{
+			word: {
+				type: String,
+				required: [true, "A word is required"]
+			},
+			type: {
+				type: String,
+				enum: DumpRelations,
+				required: [true, "A relation type is required"]
+			}
+		}
+	]
 });
 
 WordSchema.pre('findOne', function () {
