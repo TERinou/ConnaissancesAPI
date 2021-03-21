@@ -145,7 +145,7 @@ async function checkInferences(relation) {
 			}
 
 			// --- add a new inference
-			inferences.push({word: relation.word, relation: wordRelation.type, relatedTo: wordRelation.word});
+			inferences.push({word: relation.word, type: wordRelation.type, relatedTo: wordRelation.word});
 		}
 	}
 
