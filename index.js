@@ -12,13 +12,14 @@ const config = require('./config');
 // --- Database connection
 const mongoose = require('mongoose');
 mongoose.connect(`mongodb://localhost/${config.db}`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true
-}, (err, database) => {
-    if (err) return console.error(err);
-    else console.log("[+]Connect to DB!");
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+	useCreateIndex: true,
+  useFindAndModify: false,
+}, (err) => {
+	if (err) return console.error(err);
+
+	console.log("[+]Connect to DB!");
 });
 
 
@@ -35,7 +36,7 @@ if (process.env.NODE_ENV === "production") {
         console.log(`Serveur ouvert en mode production sur le port ${config.port}.`);
     });
 } else {
-    app.listen(config.port, () => {
+    app.listen(config.port, async () => {
         console.log("[+]Server listening on: " + config.port);
     });
 }
