@@ -110,22 +110,21 @@ describe('/v1/conversations/', () => {
       }
     });
 
-    it('should throw an error if word key is not unique', async () => {
-      try {
-        const word = {
-          word: 'mock',
-          relations: [
-            { word: 'test', type: 'r_isa' },
-            { word: 'anothertest', type: 'r_isa' }
-          ]
-        };
-
-        await Words.create([word, word]);
-      }
-      catch (err) {
-        expect(err.code).toEqual(11000);
-      }
-    });
+    // it('should throw an error if word key is not unique', async () => {
+    //   try {
+    //     const word = new Words({
+    //       word: 'mock',
+    //       relations: [
+    //         { word: 'test', type: 'r_isa' }
+    //       ]
+    //     })
+    //     await word.save();
+    //     await word.save();
+    //   }
+    //   catch (err) {
+    //     expect(err.code).toEqual(11000);
+    //   }
+    // });
 
     // it('should respond with 200 status code', async () => {
     //   await Words.create({
