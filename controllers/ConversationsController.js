@@ -1,15 +1,18 @@
-// --- Module import
 const Brain = require('@terinou/brain');
 const Questions = require('../models/Questions');
 const Words = require('../models/Words');
 const DumpRelations = require('../models/DumpRelations');
+const { to } = require("../lib/to");
 
-// --- Global function
-const {to} = require("../lib/to");
+/**
+ * Define the maximum depth to check while searching in inferences
+ */
+const INFERENCE_MAX_DEPTH = 3;
 
-
-// --- Global variable
-const INFERENCE_MAX_DEPTH = 5;
+/**
+ * The oneshot types or the DumpRelation that needed to be checked alone and only on 1st depth.
+ */
+const oneshotTypes = [DumpRelations.r_own, DumpRelations.r_color]
 
 
 /**
@@ -51,7 +54,7 @@ exports.onGetQuestion = function (req, res) {
  */
 exports.onPostReplies = async function (req, res) {
 
-	const {id, content} = req.body;
+	const { id, content } = req.body;
 
 	// --- content is null || undefined, return Bad Request.
 	if (!content) {
@@ -64,13 +67,11 @@ exports.onPostReplies = async function (req, res) {
 
 	// --- id is null || undefined, reply user's question.
 	if (!id) {
-
-		// --- Get content relation
-		const relation = await Brain.getRelation(content);
+		const relation = Brain.getRelation(content);
 
 		try {
-			// --- Try to found the relation
-			const inferences = await foundRelation(relation);
+			const oneshot = oneshotTypes.includes(relation.type);
+			const inferences = await foundRelation(relation, oneshot);
 
 			// --- No relation found
 			if (!inferences) {
@@ -98,60 +99,68 @@ exports.onPostReplies = async function (req, res) {
 
 	// --- Otherwise confirm we get his response.
 	else {
-		return res.status(200).json({ok: true});
+		return res.status(200).json({ ok: true });
 	}
 }
-
 
 /**
  * Check if we found the relation related word in inferences and return it.
  * If not we return the list of useful inference we found. (inference with r_isa and relation.type relation).
  * Return null if the word from the relation doesn't exist
- * @param relation	The main relation to check
- * @returns {Promise<null|[]|*>}
+ * @param relation The main relation to check
+ * @param oneshot  Boolean to toggle oneshot mode
+ * @returns {Promise<null|[]|*>} Null if no word found, else the word and the inferences found to get it.
  */
-async function checkInferences(relation) {
+async function checkInferences(relation, oneshot) {
 
 	let inferences = [];
 
 	// --- Find the word in the database.
-	const [err, word] = await to(Words.findOne({word: relation.word}).exec());
+	const [err, word] = await to(Words.findOne({ word: relation.word }).exec());
 
-	// --- If an error occurred.
-	if (err) {
+	// --- error occured or no word found.
+	if (err || !word) {
 		console.error(err);
-		return {ok: false, err: err};
+		return { ok: false, err: err };
 	}
 
-	// --- No word found.
-	if (!word) {
-		return {ok: false};
-	}
-
-	// --- Get all inferences in our word relations (r_isa and the relation type we looking for).
-	for (let wordRelation of word.relations) {
-		if (wordRelation.type === DumpRelations.r_isa || wordRelation.type === relation.type) {
-
-			// --- We found the related word.
+	// --- only check if we found the specific relation type in the inference.
+	if (oneshot) {
+		for (const wordRelation of word.relations) {
 			if (relation.relatedTo === wordRelation.word && relation.type === wordRelation.type) {
 				return {
 					ok: true,
 					relation: {
 						word: relation.word,
-						type: wordRelation.type,
+						relation: wordRelation.type,
 						relatedTo: wordRelation.word
 					}
-				};
+				}
 			}
-
-			// --- add a new inference
-			inferences.push({word: relation.word, relation: wordRelation.type, relatedTo: wordRelation.word});
 		}
 	}
 
-	return {ok: true, inferences: inferences};
-}
+	// --- check if we found the specific relation type and r_isa in the inference.
+	else {
+		for (const wordRelation of word.relations) {
+			if (wordRelation.type === DumpRelations.r_isa || wordRelation.type === relation.type) {
+				const newRelation = {
+					word: relation.word,
+					relation: wordRelation.type,
+					relatedTo: wordRelation.word
+				};
 
+				// if we found the related word, else save the inference.
+				if (relation.relatedTo === wordRelation.word && relation.type === wordRelation.type)
+					return { ok: true, relation: newRelation };
+
+				inferences.push(newRelation);
+			}
+		}
+	}
+
+	return { ok: true, inferences };
+}
 
 /**
  * Try to found the requested relation by checking inferences.
@@ -161,47 +170,36 @@ async function checkInferences(relation) {
  * @param path		The path we take during the travel
  * @returns {Promise<null|*[]>}
  */
-async function foundRelation(relation, depth = 0, path = []) {
+async function foundRelation(relation, oneshot, depth = 0, path = []) {
 
 	// --- If too deep we stop, else we are on a new depth.
-	if (depth >= INFERENCE_MAX_DEPTH) {
-		return null;
-	} else {
-		depth++;
+	if (depth >= INFERENCE_MAX_DEPTH) return null;
+	else depth++;
+
+	const res = await checkInferences(relation, oneshot);
+	if (res.err) return null;
+
+	// --- If related word has been found or oneshot mode.
+	if (res.relation || oneshot) {
+		if (res.relation) {
+			path.push(res.relation);
+			return path;
+		}
+
+		else return null;
 	}
 
-	// --- Check inferences if we found the relation.
-	// If not, we get the new inferences to work with.
-	const res = await checkInferences(relation);
-
-	// --- If something happened.
-	if (!res.ok) {
-		return null;
-	}
-
-	// --- If related word has been found.
-	if (res.relation) {
-		path.push(res.relation);
-		return path;
-	}
-
-	// --- Else loop on the new inferences (if there is).
+	// --- else loop on the new inferences found.
 	if (res.inferences && res.inferences.length > 0) {
 		for (let inference of res.inferences) {
-
-			// --- Add the inference to the path.
 			path.push(inference);
 
 			// --- The new relation only change the word to check, the type and the related word doesn't change.
-			const newRelation = Object.assign({}, relation, {word: inference.relatedTo});
+			const newRelation = Object.assign({}, relation, { word: inference.relatedTo });
 
-			// --- If relation is found, then return the path we take.
-			// Else we remove the last inference from the path.
-			if (await foundRelation(newRelation, depth, path)) {
-				return path;
-			} else {
-				path.pop();
-			}
+			// --- If relation is found return the path, else remove the last inference.
+			if (await foundRelation(newRelation, oneshot, depth, path)) return path;
+			else path.pop();
 		}
 	}
 
