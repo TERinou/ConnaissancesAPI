@@ -23,12 +23,14 @@ Manages responses (received and to be sent) from a user.
 The `content` is a required key refereeing to user's reply, if null return an error. If an `id` is provided, then the user answers a question asked by the bot. In this case we send him back a message. Otherwise it is that he asks us a question.
 
 **Body**
+
 ```json
 {
   "content": "USER_REPLY",
   "id": "ANSWER_TO"
 }
 ```
+
 <br/>
 
 <details>
@@ -38,6 +40,7 @@ The `content` is a required key refereeing to user's reply, if null return an er
 **:triangular_flag_on_post: User ask me a question**
 
 **Body**
+
 ```json
 {
   "content": "Que sais-tu sur les chaises ?"
@@ -45,6 +48,7 @@ The `content` is a required key refereeing to user's reply, if null return an er
 ```
 
 **Response**
+
 ```json
 {
   "ok": true,
@@ -68,6 +72,7 @@ The `content` is a required key refereeing to user's reply, if null return an er
   }
 }
 ```
+
 :heavy_check_mark: `Status` **200 OK**
 
 ---
@@ -77,20 +82,24 @@ The `content` is a required key refereeing to user's reply, if null return an er
 **:triangular_flag_on_post: User answered my question**
 
 **Body**
+
 ```json
 {
-    "content": "Avec des oeufs pour faire une omelette",
-    "id": 123456
+  "content": "Avec des oeufs pour faire une omelette",
+  "id": 123456
 }
 ```
 
 **Response**
+
 ```json
 {
   "ok": true
 }
 ```
+
 :heavy_check_mark: `Status` **200 OK**
+
 </details>
 
 ---
@@ -115,7 +124,7 @@ Return a random question from the database.
 
 **:triangular_flag_on_post: Random example**
 
-```json 
+```json
 {
   "ok": true,
   "question": {
@@ -124,5 +133,7 @@ Return a random question from the database.
   }
 }
 ```
+
 :heavy_check_mark: `Status` **200 OK**
+
 </details>

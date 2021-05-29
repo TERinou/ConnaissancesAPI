@@ -12,19 +12,19 @@ const config = require('./config');
 // --- Database connection
 const mongoose = require('mongoose');
 mongoose.connect(`mongodb://localhost/${config.db}`, {
-	useNewUrlParser: true,
-	useUnifiedTopology: true,
-	useCreateIndex: true,
-  useFindAndModify: false,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
 }, (err) => {
-	if (err) return console.error(err);
+    if (err) return console.error(err);
 
-	console.log("[+]Connect to DB!");
+    console.log("[+]Connect to DB!");
 });
 
 
 if (process.env.NODE_ENV === "production") {
-    const {domain} = config;
+    const { domain } = config;
     const privateKey = fs.readFileSync(`/etc/letsencrypt/live/${domain}/privkey.pem`, 'utf8');
     const certificate = fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pem`, 'utf8');
     const ca = fs.readFileSync(`/etc/letsencrypt/live/${domain}/chain.pem`, 'utf8');

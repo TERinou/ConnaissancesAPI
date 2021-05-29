@@ -5,11 +5,11 @@ const Words = require('../models/Words');
 const DumpRelations = require('../models/DumpRelations');
 
 // --- Global function
-const {to} = require("../lib/to");
+const { to } = require("../lib/to");
 
 
 // --- Global variable
-const INFERENCE_MAX_DEPTH = 5;
+const INFERENCE_MAX_DEPTH = 3;
 
 
 /**
@@ -51,7 +51,7 @@ exports.onGetQuestion = function (req, res) {
  */
 exports.onPostReplies = async function (req, res) {
 
-	const {id, content} = req.body;
+	const { id, content } = req.body;
 
 	// --- content is null || undefined, return Bad Request.
 	if (!content) {
@@ -98,7 +98,7 @@ exports.onPostReplies = async function (req, res) {
 
 	// --- Otherwise confirm we get his response.
 	else {
-		return res.status(200).json({ok: true});
+		return res.status(200).json({ ok: true });
 	}
 }
 
@@ -115,17 +115,17 @@ async function checkInferences(relation) {
 	let inferences = [];
 
 	// --- Find the word in the database.
-	const [err, word] = await to(Words.findOne({word: relation.word}).exec());
+	const [err, word] = await to(Words.findOne({ word: relation.word }).exec());
 
 	// --- If an error occurred.
 	if (err) {
 		console.error(err);
-		return {ok: false, err: err};
+		return { ok: false, err: err };
 	}
 
 	// --- No word found.
 	if (!word) {
-		return {ok: false};
+		return { ok: false };
 	}
 
 	// --- Get all inferences in our word relations (r_isa and the relation type we looking for).
@@ -145,11 +145,11 @@ async function checkInferences(relation) {
 			}
 
 			// --- add a new inference
-			inferences.push({word: relation.word, relation: wordRelation.type, relatedTo: wordRelation.word});
+			inferences.push({ word: relation.word, relation: wordRelation.type, relatedTo: wordRelation.word });
 		}
 	}
 
-	return {ok: true, inferences: inferences};
+	return { ok: true, inferences: inferences };
 }
 
 
@@ -193,7 +193,7 @@ async function foundRelation(relation, depth = 0, path = []) {
 			path.push(inference);
 
 			// --- The new relation only change the word to check, the type and the related word doesn't change.
-			const newRelation = Object.assign({}, relation, {word: inference.relatedTo});
+			const newRelation = Object.assign({}, relation, { word: inference.relatedTo });
 
 			// --- If relation is found, then return the path we take.
 			// Else we remove the last inference from the path.
