@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll"
   },
   "author": "Thomas CANTA",
   "contributors": [
@@ -28,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/TERinou/ConnaissancesAPI/issues"
   },
-  "homepage": "https://github.com/TERinou/ConnaissancesAPI#readme"
+  "homepage": "https://github.com/TERinou/ConnaissancesAPI#readme",
+  "devDependencies": {
+    "jest": "^27.0.3",
+    "mongodb-memory-server": "^6.9.6",
+    "supertest": "^6.1.3"
+  }
 }

@@ -1,158 +1,4634 @@
-[
-	{ 
-		"word": "tomate",
-		"relations": 
-		[
-			{
-				"word": "plante",
-				"type": "r_isa"
-			},
-			{
-				"word": "assiette",
-				"type": "r_lieu"
-			},
-			{
-				"word": "cuisine",
-				"type": "r_lieu"
-			},
-			{
-				"word": "croquante",
-				"type": "r_carac"
-			},
-			{
-				"word": "rouge",
-				"type": "r_carac"
-			}
-		]
-	},
-	{ 
-		"word": "plante", 
-		"relations": 
-		[
-			{
-				"word": "légume",
-				"type": "r_isa"
-			},
-			{
-				"word": "cuisine",
-				"type": "r_lieu"
-			},
-			{
-				"word": "jardin",
-				"type": "r_lieu"
-			},
-			{
-				"word": "comestible",
-				"type": "r_carac"
-			},
-			{
-				"word": "médicinale",
-				"type": "r_carac"
-			}
-		]
-	},
-	{ 
-		"word": "légume", 
-		"relations": 
-		[
-			{
-				"word": "aliment",
-				"type": "r_isa"
-			},
-			{
-				"word": "racine",
-				"type": "r_isa"
-			},
-			{
-				"word": "tubercule",
-				"type": "r_isa"
-			},
-			{
-				"word": "assiette",
-				"type": "r_lieu"
-			},
-			{
-				"word": "jardin",
-				"type": "r_lieu"
-			},
-			{
-				"word": "d'origine végétal",
-				"type": "r_carac"
-			}
-		]
-	},
-	{ 
-		"word": "fourchette", 
-		"relations": 
-		[
-			{
-				"word": "couvert",
-				"type": "r_isa"
-			},
-			{
-				"word": "ustensile",
-				"type": "r_isa"
-			},
-			{
-				"word": "tiroir",
-				"type": "r_lieu"
-			},
-			{
-				"word": "table",
-				"type": "r_lieu"
-			},
-			{
-				"word": "cuisine",
-				"type": "r_lieu"
-			},
-			{
-				"word": "en argent",
-				"type": "r_carac"
-			}
-		]
-	},
-	{
-		"word": "assiette",
-		"relations":
-		[
-			{
-				"word": "ustensile",
-				"type": "r_isa"
-			}
-		]
-	},
-	{ 
-		"word": "ustensile", 
-		"relations": 
-		[
-			{
-				"word": "cuisine",
-				"type": "r_lieu"
-			},
-			{
-				"word": "maison",
-				"type": "r_lieu"
-			},
-			{
-				"word": "table",
-				"type": "r_lieu"
-			},
-			{
-				"word": "tiroir",
-				"type": "r_lieu"
-			},
-			{
-				"word": "garage",
-				"type": "r_lieu"
-			},
-			{
-				"word": "de jardin",
-				"type": "r_carac"
-			},
-			{
-				"word": "de cuisine",
-				"type": "r_carac"
-			}
-		]
-	}
-]
+[{
+  "_id": {
+    "$oid": "60b3c40793fb653a9cfe10e6"
+  },
+  "word": "arbre",
+  "__v": 0,
+  "relations": [
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a77a"
+      },
+      "word": "feuillu",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a77b"
+      },
+      "word": "vert",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a77c"
+      },
+      "word": "haut",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a77d"
+      },
+      "word": "grand",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a77e"
+      },
+      "word": "résineux",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a77f"
+      },
+      "word": "jeune",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a780"
+      },
+      "word": "mort",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a781"
+      },
+      "word": "petit",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a782"
+      },
+      "word": "fruitier",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a783"
+      },
+      "word": "malade",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a784"
+      },
+      "word": "déraciné",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a785"
+      },
+      "word": "plante",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a786"
+      },
+      "word": "lieu",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a787"
+      },
+      "word": "plante>3674",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a788"
+      },
+      "word": "ombre",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a789"
+      },
+      "word": "ombrage",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a78a"
+      },
+      "word": "fleur",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a78b"
+      },
+      "word": "être vivant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a78c"
+      },
+      "word": "fruit>3674",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a78d"
+      },
+      "word": "vivant",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a78e"
+      },
+      "word": "végétal",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a78f"
+      },
+      "word": "vert",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a790"
+      },
+      "word": "marron",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a791"
+      },
+      "word": "vert clair",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a792"
+      },
+      "word": "beige",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a793"
+      },
+      "word": "vert sapin",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a794"
+      },
+      "word": "vert foncé",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a795"
+      },
+      "word": "bois",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a796"
+      },
+      "word": "vert>40056",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a797"
+      },
+      "word": "organisme vivant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a798"
+      },
+      "word": "racine",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a799"
+      },
+      "word": "feuille",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a79a"
+      },
+      "word": "généalogie",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a79b"
+      },
+      "word": "bout de bois",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a79c"
+      },
+      "word": "espèce végétale",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a79d"
+      },
+      "word": "plante verte",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a79e"
+      },
+      "word": "biconte",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a79f"
+      },
+      "word": "eucaryote",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7a0"
+      },
+      "word": "forêt>254099",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7a1"
+      },
+      "word": "terrain planté d'arbres",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7a2"
+      },
+      "word": "ville",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7a3"
+      },
+      "word": "Buttes-Chaumont",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7a4"
+      },
+      "word": "bois de Vincennes",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7a5"
+      },
+      "word": "cour",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7a6"
+      },
+      "word": "bois de Boulogne",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7a7"
+      },
+      "word": "forêt de Sherwood",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7a8"
+      },
+      "word": "boulevard",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7a9"
+      },
+      "word": "chemin",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7aa"
+      },
+      "word": "parc",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ab"
+      },
+      "word": "jungle",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ac"
+      },
+      "word": "forêt",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ad"
+      },
+      "word": "avenue",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ae"
+      },
+      "word": "pré",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7af"
+      },
+      "word": "montagne",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7b0"
+      },
+      "word": "campagne",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7b1"
+      },
+      "word": "verger",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7b2"
+      },
+      "word": "rue",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7b3"
+      },
+      "word": "nature",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7b4"
+      },
+      "word": "pays",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7b5"
+      },
+      "word": "terrain",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7b6"
+      },
+      "word": "jardin",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7b7"
+      },
+      "word": "bois",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7b8"
+      },
+      "word": "vert>40056",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7b9"
+      },
+      "word": "autotrophe",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ba"
+      },
+      "word": "lieu>68467",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7bb"
+      },
+      "word": "violet",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7bc"
+      },
+      "word": "blanc",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7bd"
+      },
+      "word": "être vivant>123933",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7be"
+      },
+      "word": "organisme>71624",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7bf"
+      },
+      "word": "entité vivante",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7c0"
+      },
+      "word": "être>68439",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7c1"
+      },
+      "word": "végétal>65081",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7c2"
+      },
+      "word": "lieu>134218",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7c3"
+      },
+      "word": "pièce mécanique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7c4"
+      },
+      "word": "structure de données",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7c5"
+      },
+      "word": "entité",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7c6"
+      },
+      "word": "être",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7c7"
+      },
+      "word": "entité physique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7c8"
+      },
+      "word": "route",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7c9"
+      },
+      "word": "feuille",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ca"
+      },
+      "word": "noyau",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7cb"
+      },
+      "word": "racine",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7cc"
+      },
+      "word": "branche",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7cd"
+      },
+      "word": "nature",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ce"
+      },
+      "word": "dénudé>7663",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7cf"
+      },
+      "word": "bois",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7d0"
+      },
+      "word": "plante lignifiée",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7d1"
+      },
+      "word": "sans couleur",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7d2"
+      },
+      "word": "parc zoologique",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7d3"
+      },
+      "word": "résineux>52255",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7d4"
+      },
+      "word": "plateau",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7d5"
+      },
+      "word": "gemmifère",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7d6"
+      },
+      "word": "fruit",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7d7"
+      },
+      "word": "Tunisie",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7d8"
+      },
+      "word": "déracinable",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7d9"
+      },
+      "word": "arboretum",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7da"
+      },
+      "word": "splendide",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7db"
+      },
+      "word": "sculpté",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7dc"
+      },
+      "word": "sève",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7dd"
+      },
+      "word": "latex",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7de"
+      },
+      "word": "être vivant non humain",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7df"
+      },
+      "word": "zone de combat",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7e0"
+      },
+      "word": "entité biologique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7e1"
+      },
+      "word": "gris",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7e2"
+      },
+      "word": "Forêt de Sherwood",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7e3"
+      },
+      "word": "Bois de Boulogne",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7e4"
+      },
+      "word": "campagne>215924",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7e5"
+      },
+      "word": "parc>205065",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7e6"
+      },
+      "word": "organisme",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7e7"
+      },
+      "word": "bois>146632",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7e8"
+      },
+      "word": "plante vivace",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7e9"
+      },
+      "word": "structure de donnée",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ea"
+      },
+      "word": "représentation",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7eb"
+      },
+      "word": "dénudé>161702",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ec"
+      },
+      "word": "dénudé>171869",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ed"
+      },
+      "word": "dénudé",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ee"
+      },
+      "word": "être>146885",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ef"
+      },
+      "word": "étrange",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7f0"
+      },
+      "word": "jauni",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7f1"
+      },
+      "word": "France",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7f2"
+      },
+      "word": "organe mécanique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7f3"
+      },
+      "word": "sacré",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7f4"
+      },
+      "word": "donnée",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7f5"
+      },
+      "word": "beau",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7f6"
+      },
+      "word": "plante ligneuse",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7f7"
+      },
+      "word": "animal",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7f8"
+      },
+      "word": "representation",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7f9"
+      },
+      "word": "en:representation",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7fa"
+      },
+      "word": "en:plant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7fb"
+      },
+      "word": "eucaryote corticé",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7fc"
+      },
+      "word": "axe",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7fd"
+      },
+      "word": "axe>67368",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7fe"
+      },
+      "word": "partie de l'espace",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a7ff"
+      },
+      "word": "épineux",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a800"
+      },
+      "word": "épineux>140703",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a801"
+      },
+      "word": "élagué",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a802"
+      },
+      "word": "taillé",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a803"
+      },
+      "word": "nommé",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a804"
+      },
+      "word": "récepteur",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a805"
+      },
+      "word": "muni",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a806"
+      },
+      "word": "entraînant",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a807"
+      },
+      "word": "portant",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a808"
+      },
+      "word": "véritable",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a809"
+      },
+      "word": "isolé",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a80a"
+      },
+      "word": "exploité",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a80b"
+      },
+      "word": "menant",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a80c"
+      },
+      "word": "incliné",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a80d"
+      },
+      "word": "vertical",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a80e"
+      },
+      "word": "dénommé",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a80f"
+      },
+      "word": "planche",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a810"
+      },
+      "word": "plant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a811"
+      },
+      "word": "être>171870",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a812"
+      },
+      "word": "en:eukaryote",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a813"
+      },
+      "word": "détaillé>144567",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a814"
+      },
+      "word": "couché",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a815"
+      },
+      "word": "fatal",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a816"
+      },
+      "word": "gigantesque",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a817"
+      },
+      "word": "planté",
+      "type": "r_carac"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60b3c48993fb653a9cfe1178"
+  },
+  "word": "plante",
+  "__v": 0,
+  "relations": [
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a818"
+      },
+      "word": "végétal",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a819"
+      },
+      "word": "nature",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a81a"
+      },
+      "word": "pot",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a81b"
+      },
+      "word": "jardin",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a81c"
+      },
+      "word": "balcon",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a81d"
+      },
+      "word": "montagne",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a81e"
+      },
+      "word": "parc",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a81f"
+      },
+      "word": "campagne",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a820"
+      },
+      "word": "bois",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a821"
+      },
+      "word": "serre",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a822"
+      },
+      "word": "terre",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a823"
+      },
+      "word": "d'appartement",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a824"
+      },
+      "word": "verte",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a825"
+      },
+      "word": "morte",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a826"
+      },
+      "word": "belle",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a827"
+      },
+      "word": "fanée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a828"
+      },
+      "word": "grande",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a829"
+      },
+      "word": "petite",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a82a"
+      },
+      "word": "annuelle",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a82b"
+      },
+      "word": "grasse",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a82c"
+      },
+      "word": "d'intérieur",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a82d"
+      },
+      "word": "fleur",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a82e"
+      },
+      "word": "végétation",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a82f"
+      },
+      "word": "lieu",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a830"
+      },
+      "word": "grosse",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a831"
+      },
+      "word": "grimpante",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a832"
+      },
+      "word": "pré",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a833"
+      },
+      "word": "mort",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a834"
+      },
+      "word": "jeune",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a835"
+      },
+      "word": "épine",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a836"
+      },
+      "word": "potager",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a837"
+      },
+      "word": "fleur",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a838"
+      },
+      "word": "bourgeon",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a839"
+      },
+      "word": "champ",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a83a"
+      },
+      "word": "être vivant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a83b"
+      },
+      "word": "photosynthèse",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a83c"
+      },
+      "word": "bois>146632",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a83d"
+      },
+      "word": "vivant",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a83e"
+      },
+      "word": "végétal",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a83f"
+      },
+      "word": "vert",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a840"
+      },
+      "word": "blanc",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a841"
+      },
+      "word": "fleuriste",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a842"
+      },
+      "word": "forêt",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a843"
+      },
+      "word": "jolie",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a844"
+      },
+      "word": "noir",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a845"
+      },
+      "word": "organisme",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a846"
+      },
+      "word": "carnivore",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a847"
+      },
+      "word": "rustique",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a848"
+      },
+      "word": "bleu",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a849"
+      },
+      "word": "partout",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a84a"
+      },
+      "word": "blanc",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a84b"
+      },
+      "word": "noir",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a84c"
+      },
+      "word": "bleu",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a84d"
+      },
+      "word": "vert clair",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a84e"
+      },
+      "word": "vert foncé",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a84f"
+      },
+      "word": "jaune",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a850"
+      },
+      "word": "rosé",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a851"
+      },
+      "word": "brun",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a852"
+      },
+      "word": "beige",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a853"
+      },
+      "word": "rouge",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a854"
+      },
+      "word": "orange",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a855"
+      },
+      "word": "marron",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a856"
+      },
+      "word": "verte",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a857"
+      },
+      "word": "vivant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a858"
+      },
+      "word": "Rhin",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a859"
+      },
+      "word": "rocher des Doms",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a85a"
+      },
+      "word": "salle d'attente",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a85b"
+      },
+      "word": "rivière",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a85c"
+      },
+      "word": "zone humide",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a85d"
+      },
+      "word": "aquarium",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a85e"
+      },
+      "word": "jungle",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a85f"
+      },
+      "word": "pied",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a860"
+      },
+      "word": "vase",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a861"
+      },
+      "word": "terrain",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a862"
+      },
+      "word": "biconte",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a863"
+      },
+      "word": "lieu>68467",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a864"
+      },
+      "word": "eucaryote",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a865"
+      },
+      "word": "être vivant>123933",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a866"
+      },
+      "word": "organisme>71624",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a867"
+      },
+      "word": "poisson de mer",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a868"
+      },
+      "word": "organisme vivant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a869"
+      },
+      "word": "animal>117095",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a86a"
+      },
+      "word": "uniconte",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a86b"
+      },
+      "word": "autotrophe",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a86c"
+      },
+      "word": "rose",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a86d"
+      },
+      "word": "entité vivante",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a86e"
+      },
+      "word": "être>68439",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a86f"
+      },
+      "word": "feuille",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a870"
+      },
+      "word": "racine",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a871"
+      },
+      "word": "rampant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a872"
+      },
+      "word": "invasive",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a873"
+      },
+      "word": "nectarifère",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a874"
+      },
+      "word": "dulçaquicole",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a875"
+      },
+      "word": "purgatif",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a876"
+      },
+      "word": "fruit rouge",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a877"
+      },
+      "word": "tinctorial",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a878"
+      },
+      "word": "halophyte",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a879"
+      },
+      "word": "hiémal",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a87a"
+      },
+      "word": "halophile",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a87b"
+      },
+      "word": "inerme",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a87c"
+      },
+      "word": "lactescent",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a87d"
+      },
+      "word": "nivéal",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a87e"
+      },
+      "word": "forêt>254099",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a87f"
+      },
+      "word": "déracinable",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a880"
+      },
+      "word": "être vivant non humain",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a881"
+      },
+      "word": "entité biologique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a882"
+      },
+      "word": "entité physique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a883"
+      },
+      "word": "toxique",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a884"
+      },
+      "word": "carnassier>48855",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a885"
+      },
+      "word": "splendide",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a886"
+      },
+      "word": "vénéneux",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a887"
+      },
+      "word": "carnivore>178691",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a888"
+      },
+      "word": "caduque",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a889"
+      },
+      "word": "artificielle",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a88a"
+      },
+      "word": "ornementale",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a88b"
+      },
+      "word": "persistante",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a88c"
+      },
+      "word": "potagère",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a88d"
+      },
+      "word": "drue",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a88e"
+      },
+      "word": "nature>61944",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a88f"
+      },
+      "word": "savane",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a890"
+      },
+      "word": "végétal>65081",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a891"
+      },
+      "word": "sensible",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a892"
+      },
+      "word": "partie du corps",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a893"
+      },
+      "word": "être",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a894"
+      },
+      "word": "résistante",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a895"
+      },
+      "word": "être>146885",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a896"
+      },
+      "word": "jauni",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a897"
+      },
+      "word": "carnassier",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a898"
+      },
+      "word": "carnassier>171869",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a899"
+      },
+      "word": "animal",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a89a"
+      },
+      "word": "énorme",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a89b"
+      },
+      "word": "gros",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a89c"
+      },
+      "word": "grand",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a89d"
+      },
+      "word": "beau",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a89e"
+      },
+      "word": "champignon",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a89f"
+      },
+      "word": "lieu>134218",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8a0"
+      },
+      "word": "en:small",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8a1"
+      },
+      "word": "small",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8a2"
+      },
+      "word": "vivace",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8a3"
+      },
+      "word": "en:eukaryota",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8a4"
+      },
+      "word": "en:organism",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8a5"
+      },
+      "word": "lieu",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8a6"
+      },
+      "word": "dépolluante",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8a7"
+      },
+      "word": "pot>89628",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8a8"
+      },
+      "word": "malade>163355",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8a9"
+      },
+      "word": "malade",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8aa"
+      },
+      "word": "jeune",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8ab"
+      },
+      "word": "métazoaire",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8ac"
+      },
+      "word": "epiphyte",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8ad"
+      },
+      "word": "épiphyte",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8ae"
+      },
+      "word": "eukaryota",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8af"
+      },
+      "word": "être>171870",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8b0"
+      },
+      "word": "en:body part",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8b1"
+      },
+      "word": "milieu biologique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8b2"
+      },
+      "word": "déracinée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8b3"
+      },
+      "word": "photosynthétique",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8b4"
+      },
+      "word": "endémique",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8b5"
+      },
+      "word": "altérée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8b6"
+      },
+      "word": "génétiquement altéré",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8b7"
+      },
+      "word": "génétiquement modifié",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8b8"
+      },
+      "word": "cespiteuse",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8b9"
+      },
+      "word": "modifié",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8ba"
+      },
+      "word": "modifiée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8bb"
+      },
+      "word": "en:irritant contact dermatitis",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8bc"
+      },
+      "word": "en:infectious disease",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8bd"
+      },
+      "word": "génétiquement altérée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8be"
+      },
+      "word": "génétiquement modifiée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8bf"
+      },
+      "word": "attaquée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8c0"
+      },
+      "word": "comestible",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8c1"
+      },
+      "word": "pionnière",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8c2"
+      },
+      "word": "vivante",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8c3"
+      },
+      "word": "sève",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8c4"
+      },
+      "word": "en:eukaryote",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8c5"
+      },
+      "word": "vert",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8c6"
+      },
+      "word": "vert>40056",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8c7"
+      },
+      "word": "comestible>113963",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8c8"
+      },
+      "word": "vert>40056",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8c9"
+      },
+      "word": "maladie infectieuse",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8ca"
+      },
+      "word": "attribuée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8cb"
+      },
+      "word": "néoténique",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8cc"
+      },
+      "word": "entière",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8cd"
+      },
+      "word": "exogène",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8ce"
+      },
+      "word": "nouvelle",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a8cf"
+      },
+      "word": "compressée",
+      "type": "r_carac"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60b3c48c93fb653a9cfe1181"
+  },
+  "word": "végétal",
+  "__v": 0,
+  "relations": [
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8d0"
+      },
+      "word": "nature",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8d1"
+      },
+      "word": "plante",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8d2"
+      },
+      "word": "être vivant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8d3"
+      },
+      "word": "règne",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8d4"
+      },
+      "word": "végétation",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8d5"
+      },
+      "word": "matière",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8d6"
+      },
+      "word": "organisme",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8d7"
+      },
+      "word": "vie",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8d8"
+      },
+      "word": "lieu",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8d9"
+      },
+      "word": "jeune",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8da"
+      },
+      "word": "plante>3674",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8db"
+      },
+      "word": "montagne",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8dc"
+      },
+      "word": "nourriture",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8dd"
+      },
+      "word": "alimentation",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8de"
+      },
+      "word": "agriculture",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8df"
+      },
+      "word": "campagne",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8e0"
+      },
+      "word": "forêt",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8e1"
+      },
+      "word": "rouge",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8e2"
+      },
+      "word": "jaune",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8e3"
+      },
+      "word": "rose",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8e4"
+      },
+      "word": "vert",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8e5"
+      },
+      "word": "sucré",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8e6"
+      },
+      "word": "vivant",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8e7"
+      },
+      "word": "culture",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8e8"
+      },
+      "word": "autotrophe",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8e9"
+      },
+      "word": "exotique",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8ea"
+      },
+      "word": "organisme vivant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8eb"
+      },
+      "word": "culture>50567",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8ec"
+      },
+      "word": "botanique",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8ed"
+      },
+      "word": "horticulture",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8ee"
+      },
+      "word": "être vivant>123933",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8ef"
+      },
+      "word": "verdure",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8f0"
+      },
+      "word": "végétation",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8f1"
+      },
+      "word": "mort",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8f2"
+      },
+      "word": "vert",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8f3"
+      },
+      "word": "rouge",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8f4"
+      },
+      "word": "jaune",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8f5"
+      },
+      "word": "rose",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8f6"
+      },
+      "word": "vert clair",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8f7"
+      },
+      "word": "vert foncé",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8f8"
+      },
+      "word": "vert sapin",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8f9"
+      },
+      "word": "vert tendre",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8fa"
+      },
+      "word": "vert prairie",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8fb"
+      },
+      "word": "vert forêt",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8fc"
+      },
+      "word": "terre",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8fd"
+      },
+      "word": "rustique",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8fe"
+      },
+      "word": "mauvais>84381",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a8ff"
+      },
+      "word": "tropical",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a900"
+      },
+      "word": "arbres",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a901"
+      },
+      "word": "abri",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a902"
+      },
+      "word": "village",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a903"
+      },
+      "word": "exploitation agricole",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a904"
+      },
+      "word": "biome",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a905"
+      },
+      "word": "biconte",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a906"
+      },
+      "word": "eucaryote",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a907"
+      },
+      "word": "bordeaux",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a908"
+      },
+      "word": "sans couleur",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a909"
+      },
+      "word": "organisme>71624",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a90a"
+      },
+      "word": "photosynthèse",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a90b"
+      },
+      "word": "jardin",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a90c"
+      },
+      "word": "entité vivante",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a90d"
+      },
+      "word": "être>68439",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a90e"
+      },
+      "word": "feuille",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a90f"
+      },
+      "word": "garrigue",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a910"
+      },
+      "word": "garigue",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a911"
+      },
+      "word": "réservoir>136248",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a912"
+      },
+      "word": "entité biologique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a913"
+      },
+      "word": "entité physique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a914"
+      },
+      "word": "être>146885",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a915"
+      },
+      "word": "être vivant non humain",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a916"
+      },
+      "word": "réservoir",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a917"
+      },
+      "word": "en:agriculture",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a918"
+      },
+      "word": "en:trees (plant)",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a919"
+      },
+      "word": "être",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a91a"
+      },
+      "word": "en:eukaryote",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a91b"
+      },
+      "word": "être>171870",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a91c"
+      },
+      "word": "en:cultivation",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a91d"
+      },
+      "word": "en:farming",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a91e"
+      },
+      "word": "en:botanical",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c48c301bec03dfb6a91f"
+      },
+      "word": "en:botanic",
+      "type": "r_conseq"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60b3c49293fb653a9cfe1193"
+  },
+  "word": "fleur",
+  "__v": 0,
+  "relations": [
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a920"
+      },
+      "word": "champ",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a921"
+      },
+      "word": "jardin",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a922"
+      },
+      "word": "campagne",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a923"
+      },
+      "word": "plante",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a924"
+      },
+      "word": "végétal",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a925"
+      },
+      "word": "fleuriste",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a926"
+      },
+      "word": "pot",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a927"
+      },
+      "word": "jardinière",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a928"
+      },
+      "word": "vase",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a929"
+      },
+      "word": "pré",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a92a"
+      },
+      "word": "belle",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a92b"
+      },
+      "word": "bleu",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a92c"
+      },
+      "word": "parfumée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a92d"
+      },
+      "word": "rose",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a92e"
+      },
+      "word": "fanée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a92f"
+      },
+      "word": "jolie",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a930"
+      },
+      "word": "bouquet",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a931"
+      },
+      "word": "cimetière",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a932"
+      },
+      "word": "parterre",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a933"
+      },
+      "word": "jaune",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a934"
+      },
+      "word": "coupée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a935"
+      },
+      "word": "fraîche",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a936"
+      },
+      "word": "rouge",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a937"
+      },
+      "word": "éclose",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a938"
+      },
+      "word": "petite",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a939"
+      },
+      "word": "odorante",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a93a"
+      },
+      "word": "fermée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a93b"
+      },
+      "word": "ouverte",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a93c"
+      },
+      "word": "blanche",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a93d"
+      },
+      "word": "botanique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a93e"
+      },
+      "word": "boutique",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a93f"
+      },
+      "word": "pépinière",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a940"
+      },
+      "word": "en bouton",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a941"
+      },
+      "word": "sauvage",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a942"
+      },
+      "word": "parc",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a943"
+      },
+      "word": "des champs",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a944"
+      },
+      "word": "épanouie",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a945"
+      },
+      "word": "flore",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a946"
+      },
+      "word": "être vivant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a947"
+      },
+      "word": "lieu",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a948"
+      },
+      "word": "décoration",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a949"
+      },
+      "word": "senteur",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a94a"
+      },
+      "word": "odeur",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a94b"
+      },
+      "word": "parfum",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a94c"
+      },
+      "word": "gerbe",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a94d"
+      },
+      "word": "bouquet",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a94e"
+      },
+      "word": "vase",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a94f"
+      },
+      "word": "couronne",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a950"
+      },
+      "word": "exotique",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a951"
+      },
+      "word": "naturelle",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a952"
+      },
+      "word": "magnifique",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a953"
+      },
+      "word": "bleue",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a954"
+      },
+      "word": "rare",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a955"
+      },
+      "word": "artificielle",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a956"
+      },
+      "word": "séchée",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a957"
+      },
+      "word": "en papier",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a958"
+      },
+      "word": "vivant",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a959"
+      },
+      "word": "mort",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a95a"
+      },
+      "word": "rose",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a95b"
+      },
+      "word": "bleu",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a95c"
+      },
+      "word": "jaune",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a95d"
+      },
+      "word": "orange",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a95e"
+      },
+      "word": "rouge",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a95f"
+      },
+      "word": "violet",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a960"
+      },
+      "word": "blanc",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a961"
+      },
+      "word": "bleu clair",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a962"
+      },
+      "word": "fuschia",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a963"
+      },
+      "word": "jaune>40056",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a964"
+      },
+      "word": "parfumé",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a965"
+      },
+      "word": "bordeaux",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a966"
+      },
+      "word": "vert clair",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a967"
+      },
+      "word": "jaune>40056",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a968"
+      },
+      "word": "rose>40056",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a969"
+      },
+      "word": "jardinière>36899",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a96a"
+      },
+      "word": "mobile",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a96b"
+      },
+      "word": "récolter",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a96c"
+      },
+      "word": "systématique",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a96d"
+      },
+      "word": "plante>3674",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a96e"
+      },
+      "word": "organe végétal",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a96f"
+      },
+      "word": "organe reproducteur",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a970"
+      },
+      "word": "ornement",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a971"
+      },
+      "word": "dire merci",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a972"
+      },
+      "word": "jardin à l'anglaise",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a973"
+      },
+      "word": "panier",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a974"
+      },
+      "word": "vase en porcelaine",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a975"
+      },
+      "word": "cerisier",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a976"
+      },
+      "word": "marché",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a977"
+      },
+      "word": "montagne",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a978"
+      },
+      "word": "branche",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a979"
+      },
+      "word": "bas-côté",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a97a"
+      },
+      "word": "serre>13923",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a97b"
+      },
+      "word": "vase>89628",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a97c"
+      },
+      "word": "abricotier",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a97d"
+      },
+      "word": "nénuphar",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a97e"
+      },
+      "word": "clairière",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a97f"
+      },
+      "word": "pommier",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a980"
+      },
+      "word": "arbre",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a981"
+      },
+      "word": "nature",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a982"
+      },
+      "word": "bois",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a983"
+      },
+      "word": "rose>40056",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a984"
+      },
+      "word": "blanc>40056",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a985"
+      },
+      "word": "blanc>40056",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a986"
+      },
+      "word": "mauve>40056",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a987"
+      },
+      "word": "mauve>40056",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a988"
+      },
+      "word": "bleue",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a989"
+      },
+      "word": "autotrophe",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a98a"
+      },
+      "word": "lieu>68467",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a98b"
+      },
+      "word": "bord de route",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a98c"
+      },
+      "word": "prairie",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a98d"
+      },
+      "word": "nénufar",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a98e"
+      },
+      "word": "jungle",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a98f"
+      },
+      "word": "coffre de voiture",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a990"
+      },
+      "word": "remercîment",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a991"
+      },
+      "word": "remerciement",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a992"
+      },
+      "word": "bouton",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a993"
+      },
+      "word": "nectarifère",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a994"
+      },
+      "word": "odorant",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a995"
+      },
+      "word": "fraiche",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a996"
+      },
+      "word": "butinage",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a997"
+      },
+      "word": "embaumer",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a998"
+      },
+      "word": "ingrédient de cuisine",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a999"
+      },
+      "word": "comestible",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a99a"
+      },
+      "word": "fuchsia",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a99b"
+      },
+      "word": "délicat>90307",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a99c"
+      },
+      "word": "être vivant non humain",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a99d"
+      },
+      "word": "ingrédient de recette de cuisine",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a99e"
+      },
+      "word": "mauve>171869",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a99f"
+      },
+      "word": "fuchsia>40056",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9a0"
+      },
+      "word": "blanc",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9a1"
+      },
+      "word": "mauve",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9a2"
+      },
+      "word": "fuchsia>145941",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9a3"
+      },
+      "word": "entité physique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9a4"
+      },
+      "word": "entité biologique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9a5"
+      },
+      "word": "végétal>65081",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9a6"
+      },
+      "word": "entité vivante",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9a7"
+      },
+      "word": "être>68439",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9a8"
+      },
+      "word": "organisme>71624",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9a9"
+      },
+      "word": "organisme vivant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9aa"
+      },
+      "word": "être vivant>123933",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9ab"
+      },
+      "word": "cadeau",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9ac"
+      },
+      "word": "eucaryote",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9ad"
+      },
+      "word": "biconte",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9ae"
+      },
+      "word": "motif",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9af"
+      },
+      "word": "motif>98596",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9b0"
+      },
+      "word": "délicat",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9b1"
+      },
+      "word": "coemetiere",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9b2"
+      },
+      "word": "coemetière",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9b3"
+      },
+      "word": "serre",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9b4"
+      },
+      "word": "vase>146885",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9b5"
+      },
+      "word": "animal",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9b6"
+      },
+      "word": "fragile",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9b7"
+      },
+      "word": "en:small",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9b8"
+      },
+      "word": "small",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9b9"
+      },
+      "word": "en:odor",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9ba"
+      },
+      "word": "Ficus elastica",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9bb"
+      },
+      "word": "eucaryote corticé",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9bc"
+      },
+      "word": "miel",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9bd"
+      },
+      "word": "simple",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9be"
+      },
+      "word": "centrale",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9bf"
+      },
+      "word": "stérile",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9c0"
+      },
+      "word": "noire de Crimée",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9c1"
+      },
+      "word": "fructification",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9c2"
+      },
+      "word": "Noire de Crimée",
+      "type": "r_make"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9c3"
+      },
+      "word": "en:eukaryote",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9c4"
+      },
+      "word": "être>146885",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9c5"
+      },
+      "word": "en:plant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9c6"
+      },
+      "word": "plant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c492301bec03dfb6a9c7"
+      },
+      "word": "être>171870",
+      "type": "r_isa"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60b3c49393fb653a9cfe119a"
+  },
+  "word": "végétation",
+  "__v": 0,
+  "relations": [
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9c8"
+      },
+      "word": "vert",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9c9"
+      },
+      "word": "milieu dulçaquicole",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9ca"
+      },
+      "word": "milieu aquatique",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9cb"
+      },
+      "word": "milieu marin",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9cc"
+      },
+      "word": "colline",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9cd"
+      },
+      "word": "zone humide",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9ce"
+      },
+      "word": "monde",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9cf"
+      },
+      "word": "puits de carbone",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9d0"
+      },
+      "word": "lésion",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9d1"
+      },
+      "word": "lésion dermatologique",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9d2"
+      },
+      "word": "graisse végétale",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9d3"
+      },
+      "word": "graisses végétales",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9d4"
+      },
+      "word": "écotone",
+      "type": "r_conseq"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9d5"
+      },
+      "word": "touffue",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9d6"
+      },
+      "word": "exubérante",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9d7"
+      },
+      "word": "abondante",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9d8"
+      },
+      "word": "luxuriant",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9d9"
+      },
+      "word": "garrigue",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9da"
+      },
+      "word": "hiémal",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9db"
+      },
+      "word": "garigue",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9dc"
+      },
+      "word": "action",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9dd"
+      },
+      "word": "vert clair",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9de"
+      },
+      "word": "méditerranéenne",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9df"
+      },
+      "word": "subalpine",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9e0"
+      },
+      "word": "zone de transition",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9e1"
+      },
+      "word": "pérenne",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9e2"
+      },
+      "word": "halophile",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9e3"
+      },
+      "word": "ancienne",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9e4"
+      },
+      "word": "arbustive",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9e5"
+      },
+      "word": "légère",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9e6"
+      },
+      "word": "chasse>103453>81161",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9e7"
+      },
+      "word": "dense",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9e8"
+      },
+      "word": "désertique",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9e9"
+      },
+      "word": "sahélienne",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c493301bec03dfb6a9ea"
+      },
+      "word": "en:vegetable fat",
+      "type": "r_conseq"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60b3c4d593fb653a9cfe11c7"
+  },
+  "word": "vivant",
+  "__v": 0,
+  "relations": [
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9eb"
+      },
+      "word": "bougeant",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9ec"
+      },
+      "word": "partout",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9ed"
+      },
+      "word": "terre",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9ee"
+      },
+      "word": "animé",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9ef"
+      },
+      "word": "maternité",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9f0"
+      },
+      "word": "masculin",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9f1"
+      },
+      "word": "humain",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9f2"
+      },
+      "word": "animal",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9f3"
+      },
+      "word": "être vivant",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9f4"
+      },
+      "word": "lieu",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9f5"
+      },
+      "word": "trottoir",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9f6"
+      },
+      "word": "gros",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9f7"
+      },
+      "word": "gens",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9f8"
+      },
+      "word": "célèbre",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9f9"
+      },
+      "word": "cuisine",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9fa"
+      },
+      "word": "serre",
+      "type": "r_lieu"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9fb"
+      },
+      "word": "beau",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9fc"
+      },
+      "word": "mignon",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9fd"
+      },
+      "word": "personne",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9fe"
+      },
+      "word": "vivant",
+      "type": "r_carac"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6a9ff"
+      },
+      "word": "individu",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6aa00"
+      },
+      "word": "être humain",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6aa01"
+      },
+      "word": "personne>24956",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6aa02"
+      },
+      "word": "être humain>74860",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6aa03"
+      },
+      "word": "être vivant>123933",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6aa04"
+      },
+      "word": "être animé",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6aa05"
+      },
+      "word": "poème",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6aa06"
+      },
+      "word": "oeuvre",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6aa07"
+      },
+      "word": "ouvrage littéraire",
+      "type": "r_isa"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c4d5301bec03dfb6aa08"
+      },
+      "word": "sexy",
+      "type": "r_carac"
+    }
+  ]
+}]

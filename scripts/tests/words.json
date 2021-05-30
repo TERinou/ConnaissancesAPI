@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "60b3c40793fb653a9cfe10e6"
+  },
+  "word": "arbre",
+  "__v": 0,
+  "relations": [
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a78f"
+      },
+      "word": "vert",
+      "type": "r_color"
+    },
+    {
+      "_id": {
+        "$oid": "60b3c407301bec03dfb6a79c"
+      },
+      "word": "plante",
+      "type": "r_isa"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60b3c48993fb653a9cfe1178"
+  },
+  "word": "plante",
+  "__v": 0,
+  "relations": [
+    {
+      "_id": {
+        "$oid": "60b3c489301bec03dfb6a818"
+      },
+      "word": "végétal",
+      "type": "r_isa"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60b3c48c93fb653a9cfe1181"
+  },
+  "word": "végétal",
+  "__v": 0,
+  "relations": []
+}]
