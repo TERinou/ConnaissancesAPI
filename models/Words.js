@@ -17,6 +17,7 @@ const WordSchema = new mongoose.Schema({
       type: {
         type: String,
         enum: Object.values(DumpRelations),
+        trim: true,
         required: [true, "A relation type is required"]
       }
     }

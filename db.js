@@ -6,11 +6,13 @@ const mongod = new MongoMemoryServer();
 
 /**
  * Connect to the in-memory database.
+ * @param {String} dbName 
  */
-module.exports.connect = async () => {
+module.exports.connect = async (dbName) => {
 
-	// const uri = `mongodb://localhost/${config.db_test}`;
-	const uri = await mongod.getUri(config.db_test);
+	let uri = '';
+	if (dbName) uri = `mongodb://localhost/${dbName}`;
+	else uri = await mongod.getUri();
 
 	const mongooseOpts = {
 		useNewUrlParser: true,
@@ -19,14 +21,17 @@ module.exports.connect = async () => {
 		useFindAndModify: false,
 	};
 
-	await mongoose.connect(uri, mongooseOpts);
+	await mongoose.connect(uri, mongooseOpts, (err) => {
+		if (err) console.error(err);
+	});
 };
 
 /**
  * Drop database, close the connection and stop mongod.
+ * @param {Boolean} drop 
  */
-module.exports.close = async () => {
-	await mongoose.connection.dropDatabase();
+module.exports.close = async (drop = true) => {
+	if (drop) await mongoose.connection.dropDatabase();
 	await mongoose.connection.close();
 	await mongod.stop();
 };

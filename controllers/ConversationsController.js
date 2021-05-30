@@ -132,7 +132,7 @@ async function checkInferences(relation, oneshot) {
 					ok: true,
 					relation: {
 						word: relation.word,
-						relation: wordRelation.type,
+						type: wordRelation.type,
 						relatedTo: wordRelation.word
 					}
 				}
@@ -146,7 +146,7 @@ async function checkInferences(relation, oneshot) {
 			if (wordRelation.type === DumpRelations.r_isa || wordRelation.type === relation.type) {
 				const newRelation = {
 					word: relation.word,
-					relation: wordRelation.type,
+					type: wordRelation.type,
 					relatedTo: wordRelation.word
 				};
 
