@@ -154,7 +154,9 @@ async function checkInferences(relation, oneshot) {
 				if (relation.relatedTo === wordRelation.word && relation.type === wordRelation.type)
 					return { ok: true, relation: newRelation };
 
-				inferences.push(newRelation);
+				// save the inference only if the relation is r_isa
+				if (wordRelation.type === DumpRelations.r_isa)
+					inferences.push(newRelation);
 			}
 		}
 	}
